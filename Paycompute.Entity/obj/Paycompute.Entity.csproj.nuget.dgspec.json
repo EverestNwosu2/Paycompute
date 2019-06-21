@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj": {}
+    "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj": {
+    "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj",
+        "projectUniqueName": "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj",
         "projectName": "Paycompute.Entity",
-        "projectPath": "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj",
+        "projectPath": "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj",
         "packagesPath": "C:\\Users\\Everest\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Paycompute.Entity\\obj\\",
+        "outputPath": "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

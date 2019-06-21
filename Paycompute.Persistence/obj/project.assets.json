@@ -4537,11 +4537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Paycompute.Persistence\\Paycompute.Persistence.csproj",
+      "projectUniqueName": "C:\\Projects\\PaycomputeApp\\Paycompute.Persistence\\Paycompute.Persistence.csproj",
       "projectName": "Paycompute.Persistence",
-      "projectPath": "C:\\Projects\\Paycompute.Persistence\\Paycompute.Persistence.csproj",
+      "projectPath": "C:\\Projects\\PaycomputeApp\\Paycompute.Persistence\\Paycompute.Persistence.csproj",
       "packagesPath": "C:\\Users\\Everest\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Paycompute.Persistence\\obj\\",
+      "outputPath": "C:\\Projects\\PaycomputeApp\\Paycompute.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4560,8 +4560,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj": {
-              "projectPath": "C:\\Projects\\Paycompute.Entity\\Paycompute.Entity.csproj"
+            "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj": {
+              "projectPath": "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj"
             }
           }
         }
