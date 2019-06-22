@@ -21,6 +21,7 @@ namespace Paycompute.Entity
         public string ImageUrl { get; set; }
         public DateTime DOB { get; set; }
         public DateTime DateJoined { get; set; }
+        public string Phone { get; set; }
         public string Designation { get; set; }
         public string Email { get; set; }
         [Required, MaxLength(50)]

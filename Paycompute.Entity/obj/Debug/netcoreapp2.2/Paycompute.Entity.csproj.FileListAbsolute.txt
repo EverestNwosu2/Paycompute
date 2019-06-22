@@ -7,3 +7,12 @@ C:\Projects\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.Assembly
 C:\Projects\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.AssemblyInfo.cs
 C:\Projects\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.dll
 C:\Projects\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.pdb
+C:\Projects\PaycomputeApp\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.deps.json
+C:\Projects\PaycomputeApp\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.dll
+C:\Projects\PaycomputeApp\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.pdb
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.csprojAssemblyReference.cache
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.csproj.CoreCompileInputs.cache
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.AssemblyInfoInputs.cache
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.AssemblyInfo.cs
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.dll
+C:\Projects\PaycomputeApp\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.pdb
