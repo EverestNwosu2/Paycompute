@@ -74,3 +74,4 @@ C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.Views.pd
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.csproj.CopyComplete
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.dll
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.pdb
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Index.g.cshtml.cs
