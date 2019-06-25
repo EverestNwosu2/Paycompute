@@ -45,6 +45,7 @@ namespace Paycompute
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
             services.AddScoped<IEmployeeService, EmployeeService>();
         }
 

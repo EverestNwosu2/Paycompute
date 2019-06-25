@@ -1,0 +1,177 @@
+﻿@model EmployeeEditViewModel
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index">Employee List</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Edit Employee</li>
+                </ol>
+            </nav><br /><br />
+            <form method="post" enctype="multipart/form-data" asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="EmployeeNo"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="EmployeeNo" class="form-control" readonly style="background-color: #293043" />
+                        <span asp-validation-for="EmployeeNo" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="DateJoined"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="DateJoined" class="form-control" readonly style="background-color: #293043" />
+                        <span asp-validation-for="DateJoined" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="FirstName"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="FirstName" class="form-control" placeholder="Enter First Name.." readonly style="background-color: #293043" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2">
+                        <input asp-for="MiddleName" class="form-control" placeholder="Enter Middle Name.." readonly style="background-color: #293043"/>
+                        <span asp-validation-for="MiddleName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="LastName"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="LastName" class="form-control" placeholder="Enter Last Name" readonly style="background-color: #293043" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="Gender"></label>
+                    </div>
+                    <div class="form-check col-md-3">
+                        <select class="form-control" asp-for="Gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="DOB"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="DOB" class="form-control"  readonly style="background-color: #293043"/>
+                        <span asp-validation-for="DOB" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="NationalInsuranceNo"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="NationalInsuranceNo" class="form-control" placeholder="Enter NI number.." readonly style="background-color: #293043"/>
+                        <span asp-validation-for="NationalInsuranceNo" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="Email"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="Phone"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="Phone" class="form-control" placeholder="Enter Phone number.." />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="PaymentMethod"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select asp-for="PaymentMethod" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.PaymentMethod>()"></select>
+                        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="StudentLoan"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.StudentLoan>()"></select>
+                        <span asp-validation-for="StudentLoan" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-2">
+                        <label asp-for="UnionMember"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select asp-for="UnionMember" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.UnionMember>()"></select>
+                        <span asp-validation-for="UnionMember" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="Designation"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="Designation" class="form-control" placeholder="Enter Role..." />
+                        <span asp-validation-for="Designation" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-1">
+                        <label asp-for="ImageUrl"></label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class="btn btn-primary btn-icon-text">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <input asp-for="ImageUrl" type="file" value="Upload" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address"></label>
+                    <input asp-for="Address" class="form-control" placeholder="Enter Address.." />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="City"></label>
+                    <input asp-for="City" class="form-control" placeholder="Enter City/Town.." />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Postcode"></label>
+                    <input asp-for="Postcode" class="form-control" placeholder="Enter Postcode.." />
+                    <span asp-validation-for="Postcode" class="text-danger"></span>
+                </div><br /><br />
+
+                <div class="form-group">
+
+                    <button type="submit" class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square" style="margin-right:0.7em"></i>Update</button>
+                    <a asp-action="index" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left" style="margin-right:0.7em"></i>Back</a>
+                    <br />
+                    <br />
+                    <br />
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

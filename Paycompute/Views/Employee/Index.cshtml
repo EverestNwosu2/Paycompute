@@ -11,10 +11,11 @@
                         <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Employee List</li>
                     </ol>
-                </nav><br/><br/>
+                </nav><br /><br />
                 <div class="row">
                     <div class="col-md-12 table-responsive-md">
                         <a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New Employee</a>
+                        
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -44,22 +45,23 @@
                                         <td>@item.Gender</td>
                                         <td>@item.Designation</td>
                                         <td>@item.City</td>
-                                        <td>@item.DateJoined</td>
+                                        <td>@item.DateJoined.ToString("dd/MM/yyyy")</td>
                                         <td>
                                             <a class="text-primary" asp-action="Edit" asp-route-id="@item.Id">
-                                                <i class="fas fa-edit"></i>Edit
+                                                <i class="fas fa-edit"></i> Edit
                                             </a>
                                             <a class="text-success" asp-action="Detail" asp-route-id="@item.Id">
-                                                <i class="fas fa-bars"></i>Detail
+                                                <i class="fas fa-bars"></i> Detail
                                             </a>
                                             <a class="text-danger" asp-action="Delete" asp-route-id="@item.Id">
-                                                <i class="far fa-trash-alt"></i>Delete
+                                                <i class="far fa-trash-alt"></i> Delete
                                             </a>
                                         </td>
                                     </tr>
                                 }
                             </tbody>
-                        </table>
+                        </table><br />
+                        
                     </div>
                 </div>
             </div>

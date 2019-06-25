@@ -75,3 +75,7 @@ C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.csproj.C
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.dll
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Paycompute.pdb
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Index.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Create.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Edit.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Detail.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Delete.g.cshtml.cs

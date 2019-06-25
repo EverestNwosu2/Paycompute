@@ -1,0 +1,31 @@
+﻿@model EmployeeDeleteViewModel
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index">Employee List</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Delete Employee</li>
+                </ol>
+            </nav><br /><br />
+            <h2 style="color:red"> Are you sure you want to delete this employee ?</h2>
+            <form method="post" enctype="multipart/form-data" asp-action="Delete">
+                <div class="form-group">
+                    <input asp-for="FullName" class="form-control font-weight-bolder" readonly style="background-color: #293043"/>
+                </div>
+
+                <div class="form-group">
+
+                    <button type="submit" class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square" style="margin-right:0.7em"></i>Delete</button>
+                    <a asp-action="index" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left" style="margin-right:0.7em"></i>Back</a>
+                    <br />
+                    <br />
+                    <br />
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
