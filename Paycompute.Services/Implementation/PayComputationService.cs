@@ -82,5 +82,8 @@ namespace Paycompute.Services.Implementation
 
         public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings)
         => overtimeEarnings + contractualEarnings;
+
+        public TaxYear GetTaxYearById(int id)
+        => _context.TaxYears.Where(year => year.Id == id).FirstOrDefault();
     }
 }
