@@ -2768,6 +2768,19 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "RotativaCore/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RotativaCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RotativaCore.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -7438,6 +7451,18 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.2.0.nupkg.sha512",
         "remotion.linq.nuspec"
+      ]
+    },
+    "RotativaCore/2.2.0": {
+      "sha512": "OIxrnyn4Q0mmht9wj49+ECXi8JR60tuZaXdAU+2XHbP/p/d0OMi6BZahcuRqKhbd5oCvafl2fwWdzoh/wZsjtA==",
+      "type": "package",
+      "path": "rotativacore/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/RotativaCore.dll",
+        "rotativacore.2.2.0.nupkg.sha512",
+        "rotativacore.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -12135,7 +12160,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Paycompute.Entity >= 1.0.0",
-      "Paycompute.Services >= 1.0.0"
+      "Paycompute.Services >= 1.0.0",
+      "RotativaCore >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -12205,6 +12231,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "RotativaCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           }
         },
         "imports": [

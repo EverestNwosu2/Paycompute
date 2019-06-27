@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b16879655f1bfaad5114d792a3064d35c20914bb"
+    "signature": "587cec99c506441fae06336a7fa244a71fc807ce"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Paycompute.Entity": "1.0.0",
-          "Paycompute.Services": "1.0.0"
+          "Paycompute.Services": "1.0.0",
+          "RotativaCore": "2.2.0"
         },
         "runtime": {
           "Paycompute.dll": {}
@@ -294,6 +295,21 @@
         },
         "compile": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "RotativaCore/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RotativaCore.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RotativaCore.dll": {}
         }
       },
       "System.Collections.Immutable/1.5.0": {},
@@ -3377,6 +3393,13 @@
       "sha512": "sha512-fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
+    },
+    "RotativaCore/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OIxrnyn4Q0mmht9wj49+ECXi8JR60tuZaXdAU+2XHbP/p/d0OMi6BZahcuRqKhbd5oCvafl2fwWdzoh/wZsjtA==",
+      "path": "rotativacore/2.2.0",
+      "hashPath": "rotativacore.2.2.0.nupkg.sha512"
     },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",

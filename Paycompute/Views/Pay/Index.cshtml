@@ -1,0 +1,68 @@
+﻿@model  IEnumerable<PaymentRecordIndexViewModel>
+
+@{ ViewBag.Title = "Payment Records";}
+
+    <div class="row">
+        <div class="col-md-12 grid-margin">
+            <div class="card">
+                <div class="card-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Payroll List</li>
+                        </ol>
+                    </nav><br /><br />
+                    <div class="row">
+                        <div class="col-md-12 table-responsive-md">
+                            <a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New Pay</a>
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Employee</th>
+                                        <th>Pay Date</th>
+                                        <th>Month</th>
+                                        <th>Tax Year</th>
+                                        <th>Total Earnings</th>
+                                        <th>Total Deductions</th>
+                                        <th>Net Pay</th>
+                                        <th class="text-warning">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <a asp-action="Detail" asp-route-id="@item.Id">
+                                                    @item.FullName
+                                                </a>
+                                            </td>
+                                            <td>
+                                                @item.PayDate.ToString("dd/MM/yyyy")
+                                            </td>
+                                            <td>@item.PayMonth</td>
+                                            <td>@item.Year</td>
+                                            <td>@item.TotalEarnings.ToString("C")</td>
+                                            <td>@item.TotalDeduction.ToString("c")</td>
+                                            <td>@item.NetPayment.ToString("C")</td>
+                                            <td>
+                                                
+                                                <a class="text-success" asp-action="Payslip" asp-route-id="@item.Id">
+                                                    <i class="fas fa-bars"></i> Preview Payslip
+                                                </a>
+                                                <a class="text-danger" asp-action="GeneratePayslipPdf" asp-route-id="@item.Id">
+                                                      <i class="fas fa-file-pdf"></i>  Payslip Pdf
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table><br />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -79,3 +79,9 @@ C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employe
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Edit.g.cshtml.cs
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Detail.g.cshtml.cs
 C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Delete.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Pay\Index.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Pay\Create.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Pay\Detail.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\obj\Debug\netcoreapp2.2\Razor\Views\Pay\Payslip.g.cshtml.cs
+C:\Projects\PaycomputeApp\Paycompute\bin\Debug\netcoreapp2.2\WkHtmlToPdf\wkhtmltoimage.exe
+C:\Projects\PaycomputeApp\Paycompute\bin\Debug\netcoreapp2.2\WkHtmlToPdf\wkhtmltopdf.exe

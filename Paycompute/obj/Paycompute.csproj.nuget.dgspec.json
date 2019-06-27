@@ -253,6 +253,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "RotativaCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [

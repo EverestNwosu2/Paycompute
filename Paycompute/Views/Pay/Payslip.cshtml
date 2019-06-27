@@ -1,0 +1,99 @@
+﻿@model PaymentRecordDetailViewModel
+
+@{ ViewBag.Title = "Payslip";}
+
+@{ Layout = null;}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="col-md-3 pl-0">
+                        <p class="mt-5 mb-2"><b>PayCompute Ltd</b></p>
+                        <p>11 Downing Street<br />London<br />W1C 2XB</p>
+                    </div>
+                    <div class="col-md-3 pr-0">
+                        <p class="mt-5 mb-2 text-right"><b>Pay Date: @Model.PayDate.ToString("dd/MM/yyyy")</b></p>
+                        <p class="text-right">Tax Code: @Model.TaxCode<br />Year: @Model.Year<br />HMRC</p>
+                    </div>
+                </div><br /><br />
+
+                <div class="col-md-12 row">
+                    <div class="col-md-8"><h5>Employee's Name : @Model.FullName</h5></div>
+                    <div class="col-md-4"><h5>National Insurance Number : @Model.NiNo</h5></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 table-responsive-md">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Earnings</th>
+                                <th>Hours</th>
+                                <th>Rates</th>
+                                <th>Amount</th>
+                                <th>Deductions</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Basic :</b></td>
+                                <td>@Model.ContractualHours.ToString("f")</td>
+                                <td>@Model.HourlyRate.ToString("f")</td>
+                                <td>@Model.ContractualEarnings.ToString("C")</td>
+                                <td><b>Tax :</b></td>
+                                <td>@Model.Tax.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td><b>Overtime :</b></td>
+                                <td>@Model.OvertimeHours.ToString("f")</td>
+                                <td>@Model.OvertimeRate.ToString("f2")</td>
+                                <td>@Model.OvertimeEarnings.ToString("C")</td>
+                                <td><b>NIC :</b></td>
+                                <td>@Model.NIC.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><b>Union :</b></td>
+                                <td>@Model.UnionFee.Value.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><b>SLC :</b></td>
+                                <td>@Model.SLC.Value.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td><b>Total :</b></td>
+                                <td>@Model.HoursWorked</td>
+                                <td></td>
+                                <td>@Model.TotalEarnings.ToString("C")</td>
+                                <td></td>
+                                <td>@Model.TotalDeduction.ToString("C")</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-dark"><b>NET PAY :</b></td>
+                                <td class="table-dark">@Model.NetPayment.ToString("C")</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
