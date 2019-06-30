@@ -254,6 +254,10 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "RotativaCore": {
               "target": "Package",
               "version": "[2.2.0, )"
