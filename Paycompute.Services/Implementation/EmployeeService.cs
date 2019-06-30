@@ -36,8 +36,7 @@ namespace Paycompute.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<Employee> GetAll() => _context.Employees;
-
+        public IEnumerable<Employee> GetAll() => _context.Employees.AsNoTracking().OrderBy(emp => emp.FullName);
 
         public async Task UpdateAsync(Employee employee)
         {

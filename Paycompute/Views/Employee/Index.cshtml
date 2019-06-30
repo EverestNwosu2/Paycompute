@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EmployeeIndexViewModel>
+﻿@model EmployeeListPagination<EmployeeIndexViewModel>
 
 @{ ViewBag.Title = "Employee";}
 
@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-md-12 table-responsive-md">
                         <a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New Employee</a>
-                        
+
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -61,7 +61,22 @@
                                 }
                             </tbody>
                         </table><br />
-                        
+                        @{
+                            var disablePrevious = !Model.IsPreviousPageAvailable ? "disabled" : "";
+                            var disableNext = !Model.IsNextPageAvailable ? "disabled" : "";
+                        }
+
+                        <a asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageIndex - 1)"
+                           class="btn btn-primary @disablePrevious">
+                            Previous
+                        </a>
+                        <a asp-action="Index"
+                           asp-route-pageNumber="@(Model.PageIndex + 1)"
+                           class="btn btn-primary @disableNext">
+                            Next
+                        </a>
+
                     </div>
                 </div>
             </div>
